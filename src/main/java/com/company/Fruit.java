@@ -1,4 +1,4 @@
-import jdk.dynalink.NoSuchDynamicMethodException;
+package com.company;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,8 @@ public class Fruit {
 
 
     public Fruit(){
-        img = new ImageIcon("fruit.png");
+//        img = new ImageIcon("fruit.png");
+        img = new ImageIcon(getClass().getResource("fruit.png"));
         this.x = (int) Math.floor( Math.random() * Main.column) * Main.CELL_SIZE  ;
         this.y = (int) Math.floor( Math.random() * Main.row) * Main.CELL_SIZE  ;
         System.out.println(this.x);
@@ -29,7 +30,7 @@ public class Fruit {
     public void drawFruit(Graphics g){
         img.paintIcon(null,g,this.x,this.y);
 //        g.setColor(Color.GREEN);
-//        g.fillOval(this.x,this.y,Main.CELL_SIZE,Main.CELL_SIZE);
+//        g.fillOval(this.x,this.y,com.company.Main.CELL_SIZE,com.company.Main.CELL_SIZE);
 
     }
 

@@ -1,3 +1,5 @@
+package com.company;
+
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -43,24 +45,24 @@ public class Snake {
             g.fillOval(n.x,n.y,Main.CELL_SIZE,Main.CELL_SIZE);
         }
 //        g.setColor(Color.ORANGE);
-//        for (Node n : snakeBody){
+//        for (com.company.Node n : snakeBody){
 //
-//            if(n.x >= Main.width ){
+//            if(n.x >= com.company.Main.width ){
 //                n.x = 0;
 //            }
 //            if(n.x < 0 ){
-//                n.x = Main.width-Main.CELL_SIZE;
+//                n.x = com.company.Main.width-com.company.Main.CELL_SIZE;
 //            }
 //
-//            if(n.y >= Main.height ){
+//            if(n.y >= com.company.Main.height ){
 //                n.y = 0;
 //            }
 //            if(n.y < 0){
-//                n.y = Main.height - Main.CELL_SIZE;
+//                n.y = com.company.Main.height - com.company.Main.CELL_SIZE;
 //            }
 //
 //
-//            g.fillOval(n.x,n.y,Main.CELL_SIZE,Main.CELL_SIZE);
+//            g.fillOval(n.x,n.y,com.company.Main.CELL_SIZE,com.company.Main.CELL_SIZE);
 //        }
 
     }
